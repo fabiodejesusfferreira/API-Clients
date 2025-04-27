@@ -44,14 +44,6 @@ router.post("/register", async (req, res) => {
     }
 });
 
-router.get('/users', async (req, res) => {
-    try {
-        const users = await User.find()
 
-        return res.status(200).json(users)
-    } catch (error) {
-        console.error(error)
-    }
-})
 
 export default router;
